@@ -1,6 +1,6 @@
 // this code is for showing a message for the user
 
-alert ('wellcome Tourist')
+/*alert ('wellcome Tourist')
 
 var firsttime =prompt('Have you visited wadi ben hammad?')
 if (firsttime == 'yes'){
@@ -10,3 +10,25 @@ if (firsttime == 'yes'){
 }else {
   alert ('ok you must visit it')
   }
+*/  
+////// i want to ask user how many time visit wadi ben hammad
+
+
+var askuser = prompt('did you visit wadi ben hammad?')
+
+while (askuser !=='yes' && askuser !=='no') {
+  askuser = prompt('please answer yes or no')
+}
+
+var visitcount =prompt ('how many time you want visit wadi ben hammad? ')
+
+var image = ''
+for(var y = 0; y < visitcount ;y++){
+  if (askuser === 'yes'){
+    image = image + '<img src="https://www.terhaal.com/upload/media_Canyoning/Wadi_Ibin_Hammad_Canyon_Jordan_4.jpg">'
+  }
+  else if (askuser === 'no'){
+    image = image + '<img src= "https://www.hiking-in-jordan.com/images/Wadi%20Bin%20Hammad%20Tropical%20Rain%20Forest%20Trail%20-%20In%20the%20Wadi%20-%20Hiking%20in%20Jordan.jpg.jpg">'
+  }
+}
+document.write(image)
