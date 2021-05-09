@@ -25,6 +25,7 @@ visituser()
 
 
 var visitcount =prompt ('how many time you want visit wadi ben hammad? ')
+
 function gitvisit(){
 
 
