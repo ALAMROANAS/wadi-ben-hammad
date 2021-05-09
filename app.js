@@ -16,11 +16,17 @@ if (firsttime == 'yes'){
 
 var askuser = prompt('did you visit wadi ben hammad?')
 
+function visituser(){
 while (askuser !=='yes' && askuser !=='no') {
   askuser = prompt('please answer yes or no')
+ }
 }
+visituser()
+
 
 var visitcount =prompt ('how many time you want visit wadi ben hammad? ')
+function gitvisit(){
+
 
 var image = ''
 for(var y = 0; y < visitcount ;y++){
@@ -31,4 +37,7 @@ for(var y = 0; y < visitcount ;y++){
     image = image + '<img src= "https://www.hiking-in-jordan.com/images/Wadi%20Bin%20Hammad%20Tropical%20Rain%20Forest%20Trail%20-%20In%20the%20Wadi%20-%20Hiking%20in%20Jordan.jpg.jpg">'
   }
 }
-document.write(image)
+ document.write(image)
+}
+
+gitvisit() 
